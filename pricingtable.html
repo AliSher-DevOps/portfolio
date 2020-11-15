@@ -1,0 +1,491 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Get Quotation</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- <link rel="manifest" href="site.webmanifest"> -->
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/gijgo.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slicknav.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/responsive.css"> -->
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    color: #e95846;
+    text-decoration: none;
+}
+
+.pricing-table-title {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 2.6em;
+    color: #FFF;
+    margin-top: 15px;
+    text-align: left;
+    margin-bottom: 25px;
+    text-shadow: 0 1px 1px rgba(0,0,0,0.4);
+}
+
+.pricing-table-title a {
+    font-size: 0.6em;
+}
+
+.clearfix:after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    clear: both;
+}
+/** ========================
+ * Contenedor
+ ============================*/
+.pricing-wrapper {
+    width: 960px;
+    margin: 40px auto 0;
+}
+
+.pricing-table {
+    margin: 0 10px;
+    text-align: center;
+    width: 300px;
+    float: left;
+    -webkit-box-shadow: 0 0 15px rgba(0,0,0,0.4);
+    box-shadow: 0 0 15px rgba(0,0,0,0.4);
+    -webkit-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+}
+
+.pricing-table:hover {
+    -webkit-transform: scale(1.06);
+    -ms-transform: scale(1.06);
+    -o-transform: scale(1.06);
+    transform: scale(1.06);
+}
+
+.pricing-title {
+    color: #FFF;
+    background: #e95846;
+    padding: 20px 0;
+    font-size: 2em;
+    text-transform: uppercase;
+    text-shadow: 0 1px 1px rgba(0,0,0,0.4);
+}
+
+.pricing-table.recommended .pricing-title {
+    background: #2db3cb;
+}
+
+.pricing-table.recommended .pricing-action {
+    background: #2db3cb;
+}
+
+.pricing-table .price {
+    background: #403e3d;
+    font-size: 3.4em;
+    font-weight: 700;
+    padding: 20px 0;
+    text-shadow: 0 1px 1px rgba(0,0,0,0.4);
+}
+
+.pricing-table .price sup {
+    font-size: 0.4em;
+    position: relative;
+    left: 5px;
+}
+
+.table-list {
+    background: #FFF;
+    color: #403d3a;
+}
+
+.table-list li {
+    font-size: 1.4em;
+    font-weight: 700;
+    padding: 12px 8px;
+}
+
+.table-list li:before {
+    content: "\f00c";
+    font-family: 'FontAwesome';
+    color: #3fab91;
+    display: inline-block;
+    position: relative;
+    right: 5px;
+    font-size: 16px;
+} 
+
+.table-list li span {
+    font-weight: 400;
+}
+
+.table-list li span.unlimited {
+    color: #FFF;
+    background: #e95846;
+    font-size: 0.9em;
+    padding: 5px 7px;
+    display: inline-block;
+    -webkit-border-radius: 38px;
+    -moz-border-radius: 38px;
+    border-radius: 38px;
+}
+
+
+.table-list li:nth-child(2n) {
+    background: #F0F0F0;
+}
+
+.table-buy {
+    background: #FFF;
+    padding: 15px;
+    text-align: left;
+    overflow: hidden;
+}
+
+.table-buy p {
+    float: left;
+    color: #37353a;
+    font-weight: 700;
+    font-size: 2.4em;
+}
+
+.table-buy p sup {
+    font-size: 0.5em;
+    position: relative;
+    left: 5px;
+}
+
+.table-buy .pricing-action {
+    float: right;
+    color: #FFF;
+    background: #e95846;
+    padding: 10px 16px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    font-weight: 700;
+    font-size: 1.4em;
+    text-shadow: 0 1px 1px rgba(0,0,0,0.4);
+    -webkit-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+}
+
+.table-buy .pricing-action:hover {
+    background: #cf4f3e;
+}
+
+.recommended .table-buy .pricing-action:hover {
+    background: #228799;    
+}
+
+/** ================
+ * Responsive
+ ===================*/
+ @media only screen and (min-width: 768px) and (max-width: 959px) {
+    .pricing-wrapper {
+        width: 768px;
+    }
+
+    .pricing-table {
+        width: 236px;
+    }
+    
+    .table-list li {
+        font-size: 1.3em;
+    }
+
+ }
+
+ @media only screen and (max-width: 767px) {
+    .pricing-wrapper {
+        width: 420px;
+    }
+
+    .pricing-table {
+        display: block;
+        float: none;
+        margin: 0 0 20px 0;
+        width: 100%;
+    }
+ }
+
+@media only screen and (max-width: 479px) {
+    .pricing-wrapper {
+        width: 300px;
+    }
+} 
+</style>    
+</head>
+
+<body style="background-color: #020c26;">
+    <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+
+    <!-- header-start -->
+     
+    
+     
+    <nav class="navbar navbar-expand-sm  navbar navbar-dark   fixed-top " style="background-color: #020c26;">
+        <a href="index.html">
+            <img src="img/logo1.png" height="150px; " width="150px;" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler01" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarToggler01">
+          <ul class="navbar-nav mr-auto mt-0 mt-lg-0">
+            <li>
+                <li class="nav-item">
+                  <h4 class="nav-link py-0 text-white" href="">WeCare Medicial Billing Solutions LLC</h4>
+                  <small class=" text-white ml-2 pl-3">(732)-305-2727</small>
+                </li>
+              </li>
+            
+            
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <ul class="navbar-nav mr-auto mt-0 mt-lg-0">
+                
+                  <li>
+                    <li class="nav-item">
+                      <a class="nav-link py-0 text-white" href="index.html">Home</a>
+                    </li>
+                  </li>
+                  <li>
+                    <li class="nav-item">
+                      <a class="nav-link py-0 text-white" href="about.html">AboutUS</a>
+                    </li>
+                  </li>
+                  <li>
+                    <li class="nav-item">
+                      <a class="nav-link py-0 text-white" href="services.html">Services</a>
+                    </li>
+                  </li>
+                  <li>
+                    <li class="nav-item">
+                      <a class="nav-link py-0 text-white" href="pricing.html">Pricing</a>
+                    </li>
+                  </li>
+                  <li>
+                    <li class="nav-item">
+                      <a class="nav-link py-0 text-white" href="work_details.html">Our Speciality</a>
+                    </li>
+                  </li>
+                  <li>
+                    <li class="nav-item">
+                      <a class="nav-link py-0 text-white" href="contact.html">ContactUS</a>
+                    </li>
+                  </li>
+              </ul>
+          
+                 </form>
+        </div>
+      </nav>
+    <!-- header-end -->
+<div class="container mt-2 pt-2">
+<div class="row">
+<div class="col-md-12">
+
+</div>
+</div>
+</div>
+   <!-- Contenedor -->
+   <div class="pricing-wrapper clearfix mt-5 pt-5" style="font-size: 62.5%;">
+    <!-- Titulo -->
+    <h1 class="pricing-table-title"> <a href="http://creaticode.com">Creaticode.com</a></h1>
+
+    <div class="pricing-table">
+        <h3 class="pricing-title">X-Large Practise Plan</h3>
+        <div class="price text-white">2.99% <br>
+            <small>Monthly Collections</small><br>
+            <sup>$100,000+</sup></div>
+        <!-- Lista de Caracteristicas / Propiedades -->
+        <ul class="table-list">
+            <li><span>Complete Billing Services</span></li>
+            <li> <span>Weekly & Monthly Report</span></li>
+            <li><span>Working on AR Aging</span></li>
+            <li> <span>Free Credentialing For You</span></li>
+        </ul>
+        <!-- Contratar / Comprar -->
+        <div class="table-buy">
+            <a href="pricing.html"class="pricing-action">ContactUS</a>
+        </div>
+    </div>
+    
+    <div class="pricing-table recommended">
+        <h3 class="pricing-title">Large Practise Plan</h3>
+        <div class="price text-white">3.49% <br>
+            <small>Monthly Collections</small><br>
+            <sup>$50,000 to $99,999</sup></div>
+        <!-- Lista de Caracteristicas / Propiedades -->
+        <ul class="table-list">
+            <li><span>Complete Billing Services</span></li>
+            <li> <span>Weekly & Monthly Report</span></li>
+            <li><span>Working on AR Aging</span></li>
+            <li> <span> Credentialing Charges may apply </span></li>
+        </ul>
+        <!-- Contratar / Comprar -->
+        <div class="table-buy">
+            <a href="pricing.html" class="pricing-action">ContactUS</a>
+        </div>
+    </div>
+
+    <div class="pricing-table">
+        <h3 class="pricing-title">Small Practise Plan</h3>
+        <div class="price text-white">4.49% <br>
+            <small>Monthly Collections</small><br>
+            <sup>$1 to $49,999</sup></div>
+        <!-- Lista de Caracteristicas / Propiedades -->
+        <ul class="table-list">
+           
+            <li><span>Complete Billing Services</span></li>
+            <li> <span>Weekly & Monthly Report</span></li>
+            <li><span>Working on AR Aging</span></li>
+            <li> <span> Credentialing Charges may apply </span></li>
+        </ul>
+        <!-- Contratar / Comprar -->
+        <div class="table-buy">
+            <a href="pricing.html" class="pricing-action">ContactUS</a>
+        </div>
+    </div>
+</div>
+    <!-- footer start -->
+    <footer class="footer">
+        <div class="footer_top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-4 col-md-6 col-lg-4">
+                        <div class="footer_widget">
+                           <div class="logo_footer">
+                               <a href="index.html">
+                             <h2 class="text-white">WeCare</h2>
+                             <span class="text-white">Your Billing Partner</span>
+                               </a>
+                           </div>
+
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 col-lg-3">
+                        <div class="footer_widget">
+                            <h3 class="footer_title">
+                                    Services
+                            </h3>
+                            <ul>
+                                <li><a href="services.html">Medical Billing</a></li>
+                                <li><a href="services.html">Credentialing</a></li>
+                                <li><a href="services.html">Patient Help Desk</a></li>
+                            </ul>
+
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 col-lg-3">
+                        <div class="footer_widget">
+                            <h3 class="footer_title">
+                                Useful Links
+                            </h3>
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="services.html">Services</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-md-6 col-lg-2">
+                        <div class="footer_widget">
+                            <h3 class="footer_title">
+                                    Follow Us
+                            </h3>
+                            <ul>
+                                <li><a href="#">Twitter</a></li>
+                                <li><a href="#">Instagram</a></li>
+                                <li><a href="#">Facebook</a></li>
+                                
+                                <li><a href="#">linkedIn</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copy-right_text">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <p class="copy_right text-center">
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy; 2020-<script>document.write(new Date().getFullYear());</script> All rights reserved  | Developed By <spam class="text-danger">masbAS</spam></a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--/ footer end  -->
+
+    <!-- JS here -->
+    <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+    <script src="js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/ajax-form.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/scrollIt.js"></script>
+    <script src="js/jquery.scrollUp.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/nice-select.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/gijgo.min.js"></script>
+
+    <!--contact js-->
+    <script src="js/contact.js"></script>
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/jquery.form.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/mail-script.js"></script>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
